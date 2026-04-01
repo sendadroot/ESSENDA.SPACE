@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-essenda-red: #E34D2B;
+  --color-garnet-red: #8B2C1A;
+  --color-matte-black: #1A1A1A;
+  --color-off-white: #F5F0E8;
+  --color-logo-gray: #373737;
+  --color-fluor-fuchsia: #E85D04;
+  --color-acid-green: #A7C539;
+
+  --font-tenor: "Tenor Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Montserrat:wght@700&family=Inter:wght@400;700&family=Open+Sans:wght@400&display=swap');
+
+:root {
+  --essenda-red: #E34D2B;
+  --garnet-red: #8B2C1A;
+  --matte-black: #1A1A1A;
+  --off-white: #F5F0E8;
+  --logo-gray: #373737;
+  --fluor-fuchsia: #E85D04;
+  --acid-green: #A7C539;
+}
+
+body {
+  background-color: var(--off-white);
+  color: var(--matte-black);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: bold;
+}
+
+.dark-bg {
+  background-color: var(--matte-black);
+  color: var(--off-white);
+}
+
+.light-bg {
+  background-color: var(--off-white);
+  color: var(--matte-black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Custom fonts for logo - using fallbacks as these are specific fonts */
+.font-sego {
+  font-family: 'Sego', sans-serif; /* Assuming Sego is available or will be handled */
+}
+
+.font-horizon {
+  font-family: 'Horizon', sans-serif; /* Assuming Horizon is available or will be handled */
+}
